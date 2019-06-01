@@ -17,6 +17,8 @@ test2014 = AFLStats2014(289:414,2:31);
 train2015 = AFLStats2015(1:288,2:31);
 test2015 = AFLStats2015(289:414,2:31);
 
+test2015(125:126,:) = 1;
+
 train2016 = AFLStats2016(1:288,2:31);
 test2016 = AFLStats2016(289:414,2:31);
 
