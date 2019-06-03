@@ -172,4 +172,4 @@ for season = 1:7
     
 end
 
-save FeatureVectors.mat RA_feature_vectors DA_feature_vectors HA_feature_vectors PCAC_feature_vectors
+save FeatureVectors.mat RA_feature_vectors DA_feature_vectors HA_feature_vectors PCAC_feature_vectors winner
