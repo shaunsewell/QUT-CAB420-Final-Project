@@ -1,5 +1,6 @@
-% 2012-2018.met is just the csv files converted to matlab form using the
+% 2012-2018.mat is just the csv files converted to matlab form using the
 % importing tool.
+addpath(genpath('Matlab Files'));
 load("2012-2018.mat");
 
 % create training and test splits
@@ -16,7 +17,7 @@ test2014 = AFLStats2014(289:414,2:31);
 
 train2015 = AFLStats2015(1:288,2:31);
 test2015 = AFLStats2015(289:414,2:31);
-
+% Correction for cancelled game.
 test2015(125:126,:) = 1;
 
 train2016 = AFLStats2016(1:288,2:31);
@@ -48,5 +49,4 @@ test(:, :, 6) = test2017;
 test(:, :, 7) = test2018;
 
 % Now the train and test variables can be saved.
-
 save AFLData.mat train test

@@ -1,4 +1,9 @@
 function average = Calc_Cluster_Averages( games, played, averages, cluster_members, running_average)
+%
+% Computes the averages of every team against every average.
+% Where a team is a member of a new cluster the current running avergae for
+% that team is used as an initialisation value. 
+% 
     average = averages;
     [row,col] = size(average);
     

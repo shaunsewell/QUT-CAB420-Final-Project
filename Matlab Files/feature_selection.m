@@ -1,4 +1,9 @@
 function [lin_mod,log_mod,svm_mod] = feature_selection(X,Y)
+% Selects the combination of features from X which has the lowest MSE.
+%
+% Returns lin_mod, log_mod, svm_mod containing the features to use for each
+% respective model.
+
 % linear regression
 warning off   
 opt = statset('display','iter','TolTypeFun','abs');

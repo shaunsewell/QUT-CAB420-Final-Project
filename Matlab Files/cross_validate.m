@@ -1,4 +1,10 @@
 function [Train_MSE, Test_MSE] = cross_validate(X, Y, linf, logf, svmf)
+% Performs cross validation training and testing. X is the feature vectors
+% and Y is the result from a match. linf, logf and svmf are the vectors of
+% features selected to use to create each model. 
+% 
+% Returns Train_MSE and Test_MSE which contain the MSE for each iteration. 
+% 
     Train_MSE = zeros(100,3);
     Test_MSE = zeros(100,3);
 

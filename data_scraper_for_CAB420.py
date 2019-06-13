@@ -262,7 +262,7 @@ class Player:
         self.player_stats = player_stats
         
 #-----------------------------------------------------------------------------------------------------------------------
-# Testing implementation of functions  
+# Gather the data. This takes a long time, 20 min per season approx. 
 
 scraper = DataScraper()
 
